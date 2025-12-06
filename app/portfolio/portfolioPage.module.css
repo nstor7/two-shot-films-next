@@ -1,0 +1,21 @@
+.portfolio{
+  width: 100%;
+  background: var(--gris-fondo);
+}
+
+.portfolioGrid {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--fondo-negativo);
+  color: var(--titulo-negativo);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: space-evenly;
+  justify-items: center;
+}
+.portfolioItem{
+  background: var(--fondo-negativo-secundario);
+}

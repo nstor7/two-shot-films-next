@@ -1,0 +1,67 @@
+.proyectoPlayer{
+    display: grid;
+}
+
+.proyectoPlayerCover{
+    grid-area: 1/1;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: var(--azul-fondo);
+    opacity: 0.4;
+    display: grid;
+
+}
+.proyectoPlayerCover :nth-child(1){
+    justify-self: center;
+    align-self: center;
+}
+
+.proyectoPlayerCover :nth-child(1){
+    font-size: 10vw;
+    color: var(--azul-texto);
+    
+}
+.proyectoPlayerCover :nth-child(1) :hover{
+    color: var(--blanco-texto);
+}
+.proyectoPlayerImagen{
+    object-fit: cover;
+    inline-size: 100%;
+    overflow: hidden;
+    block-size: 100%;
+    grid-area: 1/1;
+    z-index: 0
+}
+.proyectoVideo {
+    position: fixed;
+    width: 0vw;
+    height: 0vw;
+    top: 3vw;
+    z-index: -1;
+
+}
+.proyectoVideoActivo{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(1,1,1,0.8);
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 20vh 80vh;
+}
+.proyectoVideoActivo p{
+    align-self: end;
+    padding: 1vw;
+    background: var(--azul-fondo);
+}
+.proyectoVideoActivo iframe{
+    width: 64vw;
+    height: 36vw;
+    align-items: start;
+}

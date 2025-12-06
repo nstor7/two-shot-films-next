@@ -1,0 +1,54 @@
+.proyecto{
+    padding: 10vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background: var(--gris-fondo);
+}
+
+.proyectoInfo{
+    display: flex;
+    flex-direction: column;
+    background: var(--dorado-fondo);
+    color: var(--dorado-texto);
+    padding: 6vw;
+}
+.proyectoInfo h1{
+    font-family: Titulo3;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    justify-self: center;
+    text-align: center;
+    line-height: 1rem;
+}
+.proyectoInfo p{
+    font-family: Parrafo;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.proyectoInfo aside{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.proyectoInfo aside p{
+    font-size: 0.8rem;
+    font-family: Titulo3;
+    opacity: 0.5;
+    
+}
+.proyectoInfoSub{
+    font-family: SubTitulo;
+    opacity: 0.5;
+    line-height: 0.9rem;
+}
+.proyectoInfoSub i{
+    font-size: 0.9rem;
+    
+}
+

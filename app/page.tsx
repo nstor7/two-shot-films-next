@@ -1,65 +1,74 @@
-import Image from "next/image";
+import type {Metadata} from 'next'
+import {Servicios} from './DB/servicios.js'; // Array de servicios
+import Trabajos from './DB/trabajos.js'; // Array de trabajos
+import styles from './inicio.module.css';
+import Card from './components/card.jsx';
+import Boton from './components/boton.jsx';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Two Shot Films",
+  description: "Transformamos tus ideas en historias cinematográficas.",
+};
+
+const Inicio = () => {
+  const featuredWorks = Trabajos.slice(0, 3);
+  var images= []
+  Trabajos.map(Trabajo => images.push(Trabajo.Thumnail))
+  const ServiciosImportantes= Servicios.slice(0,3)
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className={styles.homePage}>
+      <div className={styles.hero}>
+        <img src="images/inicio_hero.jpg" alt="" className={styles.heroImagen} />
+        <div className={styles.heroContenido}>
+          <h1>Two Shot Films</h1>
+          <p className='SubTitulo'>Transformamos tus ideas en historias cinematográficas</p>
+          <Boton  texto='Cotiza tu Video' link="/#contacto"  />
+        </div>
+      </div>
+
+      <section className={styles.servicesSection}>
+        <h2>Nuestros Servicios</h2>
+        <div className={styles.servicesGrid}>
+          {ServiciosImportantes.map(servicio => (
+            <Card 
+            key={servicio.id} 
+            imagen={servicio.hero} 
+            vinculo={'/servicios/'+servicio.id} 
+            titulo={servicio.nombre} 
+            cuerpo={servicio.subtitulo}  />
+          ))}
+        </div>
+        <Boton link="/servicios" texto='Ver Todos los Servicios' />
+      </section>
+      <div className={styles.descripcion}>
+                <h2>Producción Audiovisual en Panamá</h2>
+                <p>Somos una empresa de producción audiovisual especializada en transformar la identidad de tu marca a través del poder de la cinematografía.</p>
+
+<p> En nuestra productora audiovisual nos dedicamos a crear contenidos visuales que destacan por su calidad cinematográfica y narrativa impactante. Trabajamos principalmente con:</p>
+<ul>
+  <li>Empresas que buscan elevar su imagen corporativa</li>
+  <li>Fundaciones que necesitan comunicar su propósito de manera emotiva</li>
+  <li>Artistas que desean expresar su identidad a través de una estética visual única</li>
+</ul>
+
+<p>Nuestros servicios de producción audiovisual van más allá de simplemente grabar videos. Potenciamos tu branding mediante técnicas cinematográficas avanzadas y una narrativa cuidadosamente desarrollada que conecta con tu audiencia.
+La diferencia está en nuestro enfoque: convertimos tu mensaje en una experiencia visual memorable que refleja la esencia de tu marca y genera un vínculo emocional con tu público objetivo.</p>
+              </div>
+      {/* Portafolio */}
+      <section className={styles.portfolioSection}>
+        <h2>Trabajos Destacados</h2>
+        <div className={styles.portfolioGrid}>
+          {featuredWorks.map((trabajo, index) => (
+            <Card key={index} imagen={trabajo.Thumnail} vinculo={ '/portfolio/' + trabajo.vinculo} titulo={trabajo.Titulo} cuerpo={trabajo.SubTitulo}  />
+          ))}
+        </div>
+        <Boton
+        link="/portfolio"
+          texto="Ver Todos los Trabajos"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
-}
+};
+
+export default Inicio;

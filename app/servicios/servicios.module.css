@@ -1,0 +1,42 @@
+.servicesList {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: var(--gris-fondo);
+}
+
+.servicesList h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--blanco-texto);
+  font-family: Titulo3;
+}
+
+.servicesContainer {
+  display: grid;
+  width: 60vw;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: space-evenly;
+  justify-items: center;
+
+  gap: 2rem;
+}
+/* Contacto */
+.contact {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
