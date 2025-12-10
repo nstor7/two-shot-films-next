@@ -2,6 +2,7 @@ import Trabajos from '../../DB/trabajos'
 import style from './video.module.css'
 
 import Player from '../../components/player'
+import { TbHours12 } from 'react-icons/tb'
 // import { useState } from 'react'
 
 const video = async ({params})=>{
@@ -28,6 +29,7 @@ const video = async ({params})=>{
            </div>
     )
 }
+
 
 
 export default video

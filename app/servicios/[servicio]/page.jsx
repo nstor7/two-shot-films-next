@@ -2,6 +2,7 @@ import { Servicios } from '../../DB/servicios.js';
 import style from './servicio.module.css';
 import Trabajos from '../../DB/trabajos.js';
 import Boton from '../../components/boton.jsx';
+import Formulario from '../../components/formularioSubscripcion.jsx'
 
 
 export default async function Servicio({params}){
@@ -103,6 +104,7 @@ export default async function Servicio({params}){
             </div>
           </section>
         </div>
+        <Formulario/>
     </>
   );
 };
