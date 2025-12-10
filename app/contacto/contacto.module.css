@@ -1,0 +1,15 @@
+.contacto{
+    height: 70vw;
+    width: 100vw;
+    background: var(--gris-fondo);
+    margin: none;
+    padding: 10vw;
+}
+.contactoContenido{
+    width: 60vw;
+
+    margin: 0 auto;
+    background: var(--azul-fondo);
+    color: var(--azul-texto);
+    padding: 5vw;
+}

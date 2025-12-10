@@ -1,6 +1,64 @@
+.form{
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-auto-flow: row;
+    gap: 2vw;
+}
+.formBasicos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    gap: 1rem;
+}
+.formBasicosCampo{
+    display: flex;
+    flex-flow: column;
+    font-family: Parrafo;
+    gap: 0.3rem;
+
+}
+.form h2{
+    font-family: Titulo3;
+}
 .formInput{
     height: 3vw;
     width: 20vw;
-    font-size: 2rem;
-    font-family: Titulo2;
+    padding: 1vw;
+    font-size: 1rem;
+    font-family: Parrafo;
+}
+.formServicios{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+.formServicios label{
+    font-family: Titulo3;
+}
+.formServiciosRadio{
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    align-items: start;
+}
+.formServiciosRadioItem{
+    display: flex;
+    gap: 1rem;
+}
+.formServiciosRadioItem input{
+    width: 1.2vw;
+    height: 1.2vw;
+
+}
+.formServiciosRadioItem label{
+    font-family: Parrafo;
+}
+.formButton{
+    display: block;
+    padding: 1vw;
+    background: var(--dorado-fondo);
+    color: var(--dorado-texto);
+    box-shadow: none;
+    border: none;
 }

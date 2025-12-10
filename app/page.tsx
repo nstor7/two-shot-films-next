@@ -22,7 +22,7 @@ const Inicio = () => {
         <div className={styles.heroContenido}>
           <h1>Two Shot Films</h1>
           <p className='SubTitulo'>Transformamos tus ideas en historias cinematográficas</p>
-          <Boton  texto='Cotiza tu Video' link="/#contacto"  />
+          <Boton  texto='Cotiza tu Video' link="/contacto"  />
         </div>
       </div>
 

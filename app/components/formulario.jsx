@@ -1,19 +1,16 @@
-// components/SubscriptionForm.jsx
 "use client"; 
 
 import { useState } from 'react';
 import style from './formulario.module.css'
-import Proyecto from './seleccionProyecto'
 import {Servicios} from '../DB/servicios'
-import { useField, useServicio} from '../Controladores/formularioCTRL'
+import { useField} from '../Controladores/formularioCTRL'
 
-export default function SubscriptionForm() {
+
+export default function Formulario({ServicioQuery, PaqueteQuery}) {
   const nombre = useField({type: 'text', id:'nombre', clase : style.formInput})
   const email = useField({type: 'email', id: 'email', clase : style.formInput})
   const telefono = useField({type: 'tel', id: 'telefono', clase : style.formInput})
-  const servicio_elegido = useServicio({firstValue: Servicios[0].id})
-  const paquete_elegido = useServicio({firstValue:''})
-
+  const servicio_elegido = Servicios.find(Servicio => Servicio.id === ServicioQuery)
   const [message, setMessage] = useState('');
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -25,8 +22,10 @@ export default function SubscriptionForm() {
       const Nombre = nombre.value
       const Email = email.value
       const Telefono = telefono.value
-      const Servicio_elegido = servicio_elegido.value
-      const Paquete_elegido = paquete_elegido.value
+      const Servicio_elegido = servicio_elegido.nombre 
+      const Paquete_elegido = servicio_elegido.paquetes.find(paquete => paquete.id === PaqueteQuery).nombre
+      console.log(Servicio_elegido)
+      console.log(Paquete_elegido)
     try {
       // 1. Enviar TODOS los datos a la API Route
       const response = await fetch('/api/subscribe', {
@@ -51,8 +50,6 @@ export default function SubscriptionForm() {
       nombre.clean()
       email.clean()
       telefono.clean()
-      servicio_elegido.clean();
-      paquete_elegido.clean()
       
 
     } catch (error) {
@@ -64,7 +61,6 @@ export default function SubscriptionForm() {
     }
   };
   
-  const Service = Servicios.find(Servicio => Servicio.id === servicio_elegido.value)
   
   return (
     <form onSubmit={handleSubmit} className={style.form}>
@@ -92,43 +88,7 @@ export default function SubscriptionForm() {
         </div>
         
       </div>
-      {/* --- Campos del Proyecto --- */}
-    
-         <div className={style.formServicios}>
-          <label htmlFor="servicios" >Tipo de Servicio Interesado *</label>
-          <div className={style.formServiciosRadio} >
-            {Servicios.map((servicio) => {
-              return( <div className={style.formServiciosRadioItem}>
-                <input value={servicio.id} type='radio' name='servicios' id={servicio.id} onChange={servicio_elegido.onChange} />
-                
-                <label htmlFor={servicio.id} className="block text-sm font-medium text-gray-700" >{servicio.nombre}</label>
-              </div>)
-             
-            }
-
-            )}
-          </div>  
-        </div>
-        <div className={style.formServicios}>
-            
-            <label htmlFor="">Paquetes de {Service.nombre}</label>
-            <div className={style.formServiciosRadio}></div>
-            {Service.paquetes.map((paquete) =>{
-                return(
-                    <div className={style.formServiciosRadioItem} >
-                        <input type="radio" value={paquete.id} name='paquetes' id={paquete.id} onChange={paquete_elegido.onChange}/>
-                        <label htmlFor={paquete.id} >{paquete.nombre} </label>
-                    
-                   </div>
-                    
-                )
-            }
-                
-            )}
-             
-            
-            
-        </div>
+      
       <button 
         type="submit" 
         disabled={isLoading} 

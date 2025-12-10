@@ -37,11 +37,11 @@
 }
 
 .navList, .navListNone {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  display: flex;
   gap: 1rem;
   justify-self: center;
   list-style: none;
+  align-items: center;
 }
 
 .navLink {

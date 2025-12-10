@@ -22,8 +22,8 @@ const Header = () => {
         <ul className={classNameNav}>
           <li><Link onClick={mostrarMenu} href="/" className={styles.navLink} >Inicio</Link></li>
           <li><Link onClick={mostrarMenu} href="/servicios" className={styles.navLink} >Servicios</Link></li>
-          
           <li><Link onClick={mostrarMenu} href="/portfolio" className={styles.navLink} >Portafolio</Link></li>
+          <li><Link onClick={mostrarMenu} href="/contacto" className={styles.navLink} >Cotiza</Link></li>
         </ul>
       </nav>
       <div className={classNameSocial} onClick={mostrarMenu} > <Social /></div>
