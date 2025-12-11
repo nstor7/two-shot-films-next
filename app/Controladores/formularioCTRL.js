@@ -1,6 +1,9 @@
 "use client";
 
 import {useState} from 'react'
+import { useSearchParams } from 'next/navigation';
+import Formulario from '../components/formularioSubscripcion'
+import MiniFormulario  from '../components/formulario'
 
 export const useField =({type, id, clase})=> {
   const [value, setValue] = useState('')
@@ -42,21 +45,28 @@ export const useServicio =({ firstValue})=>{
   }
 }
 
-
-export const usePaquete=({ servicios })=>{
-    const proyectoInicial = servicios[0].id
-    const [proyecto, setProyecto] = useState(proyectoInicial)
-    
-    const elegir = eleccion =>{
-        setProyecto(eleccion)
-    }
-
-    
-
-    return(
-        proyecto,
-        elegir
+export const Form = ()=>{
+    const query = useSearchParams()
+    if(query.size === 0){
+        return(
+          <Formulario/>
     )
+    }
+    else{
+        const servicio = query.get('servicio')
+        const paquete = query.get('paquete')
+
+        return(
+          <MiniFormulario
+            ServicioQuery = {servicio}
+            PaqueteQuery = {paquete}
+           />
+        )
+
+    }
+    
+
+    
 }
 
    
