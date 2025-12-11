@@ -1,6 +1,6 @@
 "use client";
 
-import {useState, Suspense} from 'react'
+import {useState} from 'react'
 import { useSearchParams } from 'next/navigation';
 import Formulario from '../components/formularioSubscripcion'
 import MiniFormulario  from '../components/formulario'
@@ -50,9 +50,8 @@ export const Form = ()=>{
     const query = useSearchParams()
     if(query.size === 0){
         return(
-          <Suspense fallback={<div>Cargando formulario...</div>}>
+          
             <Formulario/>
-          </Suspense>
           
     )
     }
@@ -61,12 +60,10 @@ export const Form = ()=>{
         const paquete = query.get('paquete')
 
         return(
-      <Suspense fallback={<div>Cargando formulario...</div>}>
         <MiniFormulario
             ServicioQuery = {servicio}
             PaqueteQuery = {paquete}
            /> 
-      </Suspense>
           
         )
 
