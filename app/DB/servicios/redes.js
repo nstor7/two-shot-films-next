@@ -2,6 +2,7 @@
 const redes = {
     id: "redes",
     nombre: "Producción de Contenido para Redes Sociales",
+    hero: "/images/Persiana_Americana_Thumnail.jpg",
     subtitulo: "Construye una presencia digital que refleja el nivel de tu marca",
     descripcion: "En redes sociales no basta con estar presente: hay que destacar. Creamos contenido visual cinematográfico que hace que tu marca se vea y se sienta diferente en el feed. No hacemos posts genéricos que se pierden entre miles; producimos piezas que generan pausas, engagement y fortalecen tu identidad digital. Cada video trabaja para construir comunidad y posicionar tu marca como referente en tu industria.",
     ventajas: [
