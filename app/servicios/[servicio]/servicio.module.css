@@ -1,6 +1,6 @@
 
 @keyframes paralax {
-  from {object-position: 50% 0;}
+  from {object-position: 50% -100%;}
   to {object-position: 50% 100%;} 
  }
  @keyframes paneo {
