@@ -10,7 +10,6 @@ import { Suspense } from 'react'
 
 const Contacto = ()=>{
     const query = useSearchParams()
-    console.log(query)
     if(query.size === 0){
         return(
         <main className={style.contacto} >
