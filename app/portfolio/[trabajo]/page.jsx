@@ -10,9 +10,10 @@ const video = async ({params})=>{
     const Trabajo = Trabajos.find(Trabajo => Trabajo.vinculo === trabajo)
 
     return(
-        <div className={style.proyecto} >
-            
-            <div className={style.proyectoInfo} >
+        <main className={style.proyecto} >
+            <div className={style.proyectoContenido} >
+
+                <div className={style.proyectoInfo} >
                 <h1>{Trabajo.Titulo} </h1>
                 <p className={style.proyectoInfoSub} > <i>{Trabajo.SubTitulo}</i> </p>
                 <aside>
@@ -26,7 +27,9 @@ const video = async ({params})=>{
                 imagen = {Trabajo.Thumnail}
                 video = {Trabajo.video}
             />
-           </div>
+            </div>
+            
+           </main>
     )
 }
 

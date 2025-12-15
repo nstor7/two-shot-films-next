@@ -49,4 +49,12 @@
 }
 body{
   background: none;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+@media(max-width: 600px){
+  main{
+    padding-top: 30vw;
+  }
+  
 }

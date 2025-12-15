@@ -1,12 +1,11 @@
 .contacto{
-    height: 70vw;
     width: 100vw;
     background: var(--gris-fondo);
     margin: none;
-    padding: 10vw;
+    padding: max(10vw, 150px) 0;
 }
 .contactoContenido{
-    width: 60vw;
+    width: min(1200px, 90vw);
 
     margin: 0 auto;
     background: var(--azul-fondo);

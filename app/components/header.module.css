@@ -78,35 +78,35 @@
     justify-self: start;
   }
   .navList{
-    height: 30vw;
+    height: 80vw;
     display: grid;
-    grid-template-rows: repeta(3, 1fr);
-    grid-template-columns: 80vw;
     gap: 0;
   }
 
   .navLink{
-    display: block;
     background: var(--azul-fondo);
-    height: 10vw;
     width: 80vw;
     text-align: center;
-    line-height: 10vw;
     border: solid 1px var(--azul-texto);
     color: var(--azul-texto);
+    height: 20vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.4rem;
   }
   .social{
-    height: 10vw;
+    height: 20vw;
     width: 80vw;
     background: var(--azul-fondo);
-    line-height: 10vw;
+    line-height: 20vw;
     border: solid 1px var(--azul-texto);
   }
   .bars{
     display: grid;
     position: fixed;
     right: 1rem;
-    bottom: 5rem;
+    bottom: 3rem;
     width: 20vw;
     height: 20vw;
     background: var(--azul-fondo);

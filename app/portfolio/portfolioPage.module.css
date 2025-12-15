@@ -4,15 +4,15 @@
 }
 
 .portfolioGrid {
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  max-width: 1200px;
+  width: min(1200px, 90vw);
   margin: 0 auto;
   background: var(--fondo-negativo);
   color: var(--titulo-negativo);
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px,90vw), 1fr));
   align-items: space-evenly;
   justify-items: center;
 }

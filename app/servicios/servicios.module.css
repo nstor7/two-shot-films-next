@@ -14,9 +14,9 @@
 
 .servicesContainer {
   display: grid;
-  width: 60vw;
+  width: min(1200px, 90vw);
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(325px, 90vw), 1fr));
   align-items: space-evenly;
   justify-items: center;
 

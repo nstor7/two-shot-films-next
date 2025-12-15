@@ -41,19 +41,20 @@ const Inicio = () => {
         <Boton link="/servicios" texto='Ver Todos los Servicios' />
       </section>
       <div className={styles.descripcion}>
-                <h2>Producción Audiovisual en Panamá</h2>
-                <p>Somos una empresa de producción audiovisual especializada en transformar la identidad de tu marca a través del poder de la cinematografía.</p>
+        <div className={styles.descripcionContenido} >
+          <h2>Producción Audiovisual en Panamá</h2>
+          <p>Somos una empresa de producción audiovisual especializada en transformar la identidad de tu marca a través del poder de la cinematografía.</p>
+          <p> En nuestra productora audiovisual nos dedicamos a crear contenidos visuales que destacan por su calidad cinematográfica y narrativa impactante. Trabajamos principalmente con:</p>
+          <ul>
+            <li>Empresas que buscan elevar su imagen corporativa</li>
+            <li>Fundaciones que necesitan comunicar su propósito de manera emotiva</li>
+            <li>Artistas que desean expresar su identidad a través de una estética visual única</li>
+          </ul>
 
-<p> En nuestra productora audiovisual nos dedicamos a crear contenidos visuales que destacan por su calidad cinematográfica y narrativa impactante. Trabajamos principalmente con:</p>
-<ul>
-  <li>Empresas que buscan elevar su imagen corporativa</li>
-  <li>Fundaciones que necesitan comunicar su propósito de manera emotiva</li>
-  <li>Artistas que desean expresar su identidad a través de una estética visual única</li>
-</ul>
-
-<p>Nuestros servicios de producción audiovisual van más allá de simplemente grabar videos. Potenciamos tu branding mediante técnicas cinematográficas avanzadas y una narrativa cuidadosamente desarrollada que conecta con tu audiencia.
-La diferencia está en nuestro enfoque: convertimos tu mensaje en una experiencia visual memorable que refleja la esencia de tu marca y genera un vínculo emocional con tu público objetivo.</p>
-              </div>
+          <p>Nuestros servicios de producción audiovisual van más allá de simplemente grabar videos. Potenciamos tu branding mediante técnicas cinematográficas avanzadas y una narrativa cuidadosamente desarrollada que conecta con tu audiencia.
+          La diferencia está en nuestro enfoque: convertimos tu mensaje en una experiencia visual memorable que refleja la esencia de tu marca y genera un vínculo emocional con tu público objetivo.</p>
+        </div>          
+      </div>
       {/* Portafolio */}
       <section className={styles.portfolioSection}>
         <h2>Trabajos Destacados</h2>

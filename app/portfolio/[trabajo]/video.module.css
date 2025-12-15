@@ -1,14 +1,17 @@
 .proyecto{
-    padding: 10vw;
+    padding: max(10vw, 150px) 0;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     background: var(--gris-fondo);
+    justify-content: center;
 }
-
+.proyectoContenido  {
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 90vw), 1fr));
+    display: grid;
+    width: min(1200px, 90vw);
+}
 .proyectoInfo{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     background: var(--dorado-fondo);
     color: var(--dorado-texto);
     padding: 6vw;
