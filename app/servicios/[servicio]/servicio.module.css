@@ -40,16 +40,19 @@
 .heroContenido h1{
   text-transform: uppercase;
   color: var(--blanco-texto);
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: Titulo3;
   text-align: center;
 }
 .heroContenido p{
   color: var(--blanco-texto);
-  font-family: SubTitulo;
+  font-family: SubTitulo2;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-bottom: 2vw;
+  text-shadow: 2px 2px 5px black;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 .servicioDescripcion{
   width: 100vw;

@@ -21,27 +21,29 @@
 }
 .heroContenido{
   grid-area: 1 / 1;
-  max-width: 600px;
-  justify-self: end;
   align-self: center;
   display: grid;
-  gap: 10px;
   justify-items: end;
-  margin-right: min(10vw, 200px);
-
+  width: min(700px, 80vw);
+  padding-right: max(5vw, 20px);
 }
 
 .heroContenido h1{
   text-transform: uppercase;
   color: var(--blanco-texto);
-  font-size: 4rem;
-  font-family: Titulo2;
+  font-size: 5rem;
+  font-family: Titulo3;
+  text-align: right;
 }
 .heroContenido p{
   text-align: right;
   color: var(--blanco-texto);
-  padding-bottom: 3vw;
-  font-family: SubTitulo;
+  padding-bottom: 2vw;
+  font-family: SubTitulo2;
+  font-size:3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 5px black;
 }
 
 .servicesSection {

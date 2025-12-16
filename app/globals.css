@@ -29,6 +29,10 @@
   src: local('Nohemi-Thin'), url('./assets/nohemi/Nohemi-Thin.woff');
 }
 @font-face{
+  font-family: SubTitulo2;
+  src: local('Morganite-Light'), url('./assets/Morganite/Morganite-Light.ttf');
+}
+@font-face{
   font-family: Parrafo;
   src: local('Nohemi-Light'), url('./assets/nohemi/Nohemi-Light.woff');
 
