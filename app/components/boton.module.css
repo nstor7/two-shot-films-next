@@ -1,5 +1,5 @@
 .btn {
-  display: inline-block;
+
   padding: 0.8rem 1.5rem;
   text-decoration: none;
   border: none;
@@ -10,6 +10,7 @@
   transition: background 0.3s ease;
   font-family: Parrafo;
   letter-spacing: 0.1rem;
+  
 }
 .btnNegativo {
   display: inline-block;
