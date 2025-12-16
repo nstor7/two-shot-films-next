@@ -53,15 +53,16 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: auto auto;
+    gap: 1rem;
 }
 .proyectoVideoActivo p{
     align-self: end;
-    padding: 1vw;
+    padding: min(18px, 10vw);
     background: var(--azul-fondo);
 }
 .proyectoVideoActivo iframe{
-    width: 64vw;
-    height: 36vw;
-    align-items: start;
+    width: min(800px, 80vw);
+    height: min(450px, 45vw);
+    align-self: start;
 }

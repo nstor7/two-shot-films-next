@@ -15,7 +15,7 @@ export default async function Servicio({params}){
             <div className={style.heroContenido}>
               <h1>{Service.nombre}</h1>
               <p>{Service.subtitulo}</p>
-              <Boton key= 'key' link= '#contacto' clase='btnPositivo' texto='Reserva tu Fecha' />
+              <Boton key= 'key' link= '/contacto' clase='btnPositivo' texto='Reserva tu Fecha' />
             </div>
           </section>
           <div className={style.servicioDescripcion} >
@@ -83,7 +83,7 @@ export default async function Servicio({params}){
                   <div className={style.paquetePie}>
                     <p>Costo entre:</p>
                     <p>{paquete.precio.minimo} y ${paquete.precio.maximo}</p>
-                    <Boton link='#contacto' texto='Cotiza Ahora' />
+                    <Boton link={'/contacto?paquete=' + Service.id + '&paquete=' + paquete.id} texto='Cotiza Ahora' />
                   </div>
                 </div>
               ))}

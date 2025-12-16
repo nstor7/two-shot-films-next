@@ -215,10 +215,11 @@
 }
 .paqueteCuerpo{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 90vw ), 1fr));
-  padding: 2vw;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(225px, 90vw ), 1fr));
+  padding: 2vw 0;
+  width: min(900px, 90vw);
   gap: 1vw;
+  justify-self: center;
 
 }
 
