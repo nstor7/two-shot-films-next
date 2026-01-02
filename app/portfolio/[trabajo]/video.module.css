@@ -15,29 +15,27 @@
     background: var(--dorado-fondo);
     color: var(--dorado-texto);
     padding: 6vw;
+    justify-items: center;
+    align-items: center;
 }
 .proyectoInfo h1{
     font-family: Titulo3;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    justify-self: center;
     text-align: center;
-    line-height: 1rem;
 }
 .proyectoInfo p{
     font-family: Parrafo;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.5rem;
     text-align: center;
 }
 
 .proyectoInfo aside{
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    gap: 1rem;
 }
 .proyectoInfo aside p{
     font-size: 0.8rem;

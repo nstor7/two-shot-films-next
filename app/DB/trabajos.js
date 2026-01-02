@@ -8,8 +8,7 @@ const Trabajos = [
     video: "https://www.youtube.com/embed/6HQWtQnxuQg",
     Thumnail: '/images/En_Algun_Lugar_Thumnail.jpg',
     Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Concepto',
-    'Produción', 'Concepto'],
-    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
+    'Produción', 'Concepto']
   },
   {
     Titulo: 'Persiana Americana',
@@ -20,8 +19,7 @@ const Trabajos = [
     video: "https://www.youtube.com/embed/5mepYd2zG0g",
     Thumnail: '/images/Persiana_Americana_Thumnail.jpg',
     Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Concepto',
-    'Produción', 'Concepto'],
-    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
+    'Produción', 'Concepto']
   },
   {
     Titulo: 'El Legado Charpentier',
@@ -31,7 +29,6 @@ const Trabajos = [
     cliente: 'FUNSINCOPA',
     Thumnail: '/images/Thumnail_Docu_Charpentier.jpg',
     Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización', 'Sonido', 'Post de Sonido','Produción', 'Realización'],
-    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?',
     categoria: 'empresas'
   },
   
@@ -42,8 +39,7 @@ const Trabajos = [
     vinculo: 'Quizas',
     cliente: 'Pierre Boutet',
     Thumnail: '/images/Quizas_Thumnail.jpg',
-    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Guión'],
-    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
+    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Guión']
   },
   {
     Titulo: 'Instinto',
@@ -52,8 +48,7 @@ const Trabajos = [
     vinculo: 'Instinto',
     cliente: 'Jackie Plummer',
     Thumnail: '/images/Instinto_Thumnail.jpg',
-    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Concepto', 'Guión', 'Arte'],
-    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
+    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Concepto', 'Guión', 'Arte']
   },
   {
     Titulo: 'Orquesta Sinfonica Nacional',
@@ -62,8 +57,7 @@ const Trabajos = [
     vinculo: '80_Anos_De_Historia',
     cliente: 'Ministerio de Cultura de Panama',
     Thumnail: '/images/En_Algun_Lugar_thumnail.jpg',
-    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización', 'Sonido', 'Post de Sonido','Produción', 'Realización'],
-    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
+    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización', 'Sonido', 'Post de Sonido','Produción', 'Realización']
   }
 ]
 
