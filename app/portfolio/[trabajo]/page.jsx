@@ -20,7 +20,6 @@ const video = async ({params})=>{
                     <p>{Trabajo.Genero} </p> 
                     <p>{Trabajo.cliente} </p>
                 </aside>
-                <p>{Trabajo.Descripcion} </p>
         
             </div>
             <Player

@@ -32,7 +32,7 @@ const videoclip = {
       {
         id: "performance",
         nombre: "Performance",
-        imagen: "/images/En_Algun_Lugar_Thumnail.jpg",
+        imagen: "/images/videoClipMedianera1.jpg",
         subtitulo: "Captura la energía pura de tu música",
         objetivos: [
           "Un videoclip visualmente potente centrado en tu presencia como artista",
@@ -70,7 +70,7 @@ const videoclip = {
       {
         id: "storyline",
         nombre: "Storyline",
-        imagen: "/images/En_Algun_Lugar_Thumnail.jpg",
+        imagen: "/images/videoClipMedianera2.jpg",
         subtitulo: "Crea una historia que amplifique tu canción",
         objetivos: [
           "Un videoclip narrativo que conecta emocionalmente con tu audiencia",
