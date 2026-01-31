@@ -3,8 +3,16 @@ import style from './video.module.css'
 
 import Player from '../../components/player'
 import { TbHours12 } from 'react-icons/tb'
-// import { useState } from 'react'
 
+export async function generateMetadata({params}){
+  const { trabajo } = await params
+  const Trabajo = Trabajos.find(Trabajo => Trabajo.vinculo === trabajo)
+
+  return {
+  title: Trabajo.Titulo,
+  description: Trabajo.SubTitulo
+};
+}
 const video = async ({params})=>{
     const {trabajo} = await params
     const Trabajo = Trabajos.find(Trabajo => Trabajo.vinculo === trabajo)
