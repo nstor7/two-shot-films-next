@@ -13,11 +13,11 @@ export default function RootLayout({
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E8CEW78BM"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
+          {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
 
-          gtag('config', 'G-1E8CEW78BM');
+          gtag('config', 'G-1E8CEW78BM');`}
         </script>
         {/* Google Tag Manager */}
            {/* <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
