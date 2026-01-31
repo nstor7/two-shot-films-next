@@ -6,11 +6,13 @@ import { TbHours12 } from 'react-icons/tb'
 
 export async function generateMetadata({params}){
   const { trabajo } = await params
-  const Trabajo = Trabajos.find(Trabajo => Trabajo.vinculo === trabajo)
+  const Trabajo = Trabajos.find(Trabajo => Trabajo.vinculo === trabajo),
+  
 
   return {
   title: Trabajo.Titulo,
-  description: Trabajo.SubTitulo
+  description: Trabajo.SubTitulo, 
+  robots: {index: false, follow: false}
 };
 }
 const video = async ({params})=>{
