@@ -30,12 +30,8 @@ export default function RootLayout({
       <body>
         {/* Google Tag Manager (noscript) */}
               <noscript>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-543LHCXC"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-                  }}
-                />
+                {`<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-543LHCXC"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>`}
               </noscript>
         <Header />
         {children}
