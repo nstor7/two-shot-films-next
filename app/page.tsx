@@ -8,6 +8,9 @@ import Boton from './components/boton.jsx';
 export const metadata: Metadata = {
   title: "Two Shot Films",
   description: "Transformamos tus ideas en historias cinematográficas.",
+  verification: {
+    google:  "-6zSAxAkd5NlnHJ6hqgMee2l7hOQZIYraJQT7TJkg6k"
+  }
 };
 
 const Inicio = () => {
