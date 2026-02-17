@@ -6,8 +6,8 @@ import redes from './servicios/redes'
 export const Servicios = [
   videoclip,
   cobertura,
-  corporativo,
-  redes,
+  // corporativo,
+  // redes,
   //comercial,
   //podcast
 ];

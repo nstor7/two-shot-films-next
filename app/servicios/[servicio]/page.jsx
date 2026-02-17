@@ -3,6 +3,14 @@ import style from './servicio.module.css';
 import Boton from '../../components/boton.jsx';
 
 
+export async function generateMetadata({params}){
+  const { servicio } = await params
+  const Service =  Servicios.find(Servicio => Servicio.id === servicio )
+  return {
+    title: Service.nombre,
+    description: Service.descripcion
+  };
+}
 export default async function Servicio({params}){
 
     const { servicio } = await params

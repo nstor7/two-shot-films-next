@@ -9,21 +9,21 @@
         numero: 1,
         titulo: "Cada frame fortalece tu marca",
         descripcion: "No hacemos videos 'bonitos' por hacerlos. Cada decisión creativa —desde el encuadre hasta la música— está pensada para comunicar los valores de tu marca. Nuestro estilo cinematográfico no es decoración; es una herramienta estratégica que eleva la percepción de tu evento y, por consecuencia, de tu marca. ",
-        imagen: "/images/Instinto_Thumnail.jpg",
+        imagen: "/images/Cobertura1.jpg",
         inspiracional: 'Cuando tu audiencia ve contenido de alto nivel, asocia esa calidad directamente con tu marca.'
       },
       {
         numero: 2,
         titulo: "Entendemos qué necesita comunicar cada evento",
         descripcion: "No todos los eventos necesitan el mismo tipo de video. Nosotros analizamos tus objetivos antes de encender la cámara: ¿quieres demostrar éxito y momentum? ¿O necesitas convertir curiosos en asistentes? Te guiamos para elegir el formato correcto y creamos contenido que cumple metas específicas.",
-        imagen: "/images/Quizas_Thumnail.jpg",
+        imagen: "/images/Cobertura3.jpg",
         inspiracional: 'Hacemos videos a tu medida, no solo material genérico para "tener algo".'
       },
       {
         numero: 3,
         titulo: "Contenido listo para trabajar en tus canales",
         descripcion: "Entregamos videos optimizados para el uso que les darás: formatos para Instagram, LinkedIn, tu web, o presentaciones internas. No tendrás que pensar en ediciones adicionales o adaptaciones. Desde el primer día, tienes material profesional que puedes publicar con confianza y que representa fielmente el nivel de tu marca.",
-        imagen: "/images/En_Algun_Lugar_Thumnail.jpg",
+        imagen: "/images/Cobertura5.jpg",
         inspiracional: 'El crecimiento y fidelización de tu audiencia se transforma en conversiones para tu emprendimiento.'
       }
     ],
@@ -31,7 +31,7 @@
       {
         id: "highlight",
         nombre: "Highlight",
-        imagen: "/images/En_Algun_Lugar_Thumnail.jpg",
+        imagen: "/images/Cobertura2.jpg",
         subtitulo: "Para demostrar que tu marca está activa y en movimiento",
         objetivos: [
           "Mostrar que tu evento fue un éxito rotundo",
@@ -63,7 +63,7 @@
       {
         id: "event-journey",
         nombre: "Event Journey",
-        imagen: "/images/En_Algun_Lugar_Thumnail.jpg",
+        imagen: "/images/Cobertura4.jpg",
         subtitulo: "Para convertir espectadores en futuros asistentes",
         objetivos: [
           "Atraer público comprometido a futuras ediciones",

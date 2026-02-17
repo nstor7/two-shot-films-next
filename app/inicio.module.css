@@ -24,14 +24,14 @@
   align-self: center;
   display: grid;
   justify-items: end;
-  width: min(700px, 80vw);
-  padding-right: max(5vw, 20px);
+  width: min(900px, 80vw);
+  padding: max(5vw, 20px);
 }
 
 .heroContenido h1{
   text-transform: uppercase;
   color: var(--blanco-texto);
-  font-size: 5rem;
+  font-size: max(4vw, 2rem);
   font-family: Titulo3;
   text-align: right;
 }
@@ -40,7 +40,7 @@
   color: var(--blanco-texto);
   padding-bottom: 2vw;
   font-family: SubTitulo2;
-  font-size:3rem;
+  font-size: max(2.5vw, 2rem);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   text-shadow: 2px 2px 5px black;

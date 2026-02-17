@@ -27,37 +27,41 @@ const Trabajos = [
     Genero: 'Documental',
     vinculo: 'El_Legado_Charpentier',
     cliente: 'FUNSINCOPA',
+    video: "https://www.youtube.com/embed/83-vFjF6fdE?si=TBWZK2D44r_Xqpuv",
     Thumnail: '/images/Thumnail_Docu_Charpentier.jpg',
     Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización', 'Sonido', 'Post de Sonido','Produción', 'Realización'],
     categoria: 'empresas'
   },
-  
   {
     Titulo: 'Quizás',
     SubTitulo: 'Osvaldo Farrés Cover',
     Genero: 'Video Musical',
     vinculo: 'Quizas',
     cliente: 'Pierre Boutet',
+    video: "https://www.youtube.com/embed/bxvPlSN5LRk?si=9mgFuLxt7mtDNDs0",
     Thumnail: '/images/Quizas_Thumnail.jpg',
     Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Guión']
   },
-  {
-    Titulo: 'Instinto',
-    SubTitulo: '',
-    Genero: 'Video Musical',
-    vinculo: 'Instinto',
-    cliente: 'Jackie Plummer',
-    Thumnail: '/images/Instinto_Thumnail.jpg',
-    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Concepto', 'Guión', 'Arte']
-  },
+  // {
+  //   Titulo: 'Instinto',
+  //   SubTitulo: '',
+  //   Genero: 'Video Musical',
+  //   vinculo: 'Instinto',
+  //   cliente: 'Jackie Plummer',
+  //   Thumnail: '/images/Instinto_Thumnail.jpg',
+  //   Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización','Produción', 'Concepto', 'Guión', 'Arte'],
+  //   Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
+  // },
   {
     Titulo: 'Orquesta Sinfonica Nacional',
     SubTitulo: '80 anos de Historia',
     Genero: 'Documental',
     vinculo: '80_Anos_De_Historia',
     cliente: 'Ministerio de Cultura de Panama',
-    Thumnail: '/images/En_Algun_Lugar_thumnail.jpg',
-    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización', 'Sonido', 'Post de Sonido','Produción', 'Realización']
+    video: "https://www.youtube.com/embed/jyHi5qfXKO4?si=GdtRv4X83qD7IDZa",
+    Thumnail: '/images/sinfonicaDocuPortada.jpg',
+    Roles: [ 'Dirección', 'Cinematografía', 'Edición', 'Colorización', 'Sonido', 'Post de Sonido','Produción', 'Realización'],
+    Descripcion:' Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga minima dignissimos magnam odio iste commodi similique? Facilis, reiciendis unde eos incidunt similique cum odit atque temporibus a harum ea?'
   }
 ]
 
