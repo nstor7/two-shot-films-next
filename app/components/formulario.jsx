@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import style from './formulario.module.css'
 import {Servicios} from '../DB/servicios'
 import { useField} from '../Controladores/formularioCTRL'
-
+const router = useRouter(); 
 
 export default function Formulario({ServicioQuery, PaqueteQuery}) {
   const nombre = useField({type: 'text', id:'nombre', clase : style.formInput})
