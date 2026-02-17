@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import style from './formulario.module.css'
 import {Servicios} from '../DB/servicios'
 import { useField} from '../Controladores/formularioCTRL'
@@ -43,7 +44,7 @@ export default function Formulario({ServicioQuery, PaqueteQuery}) {
       }
 
       // 2. Éxito
-      setMessage(data.message || '¡Solicitud recibida! Te contactaremos pronto.');
+      router.replace('/gracias')
       setIsError(false);
       
       // Limpiar formulario
