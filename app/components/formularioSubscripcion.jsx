@@ -1,12 +1,14 @@
 "use client"; 
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import style from './formulario.module.css'
 import Proyecto from './seleccionProyecto'
 import {Servicios} from '../DB/servicios'
 import { useField, useServicio} from '../Controladores/formularioCTRL'
 
 export default function SubscriptionForm() {
+  const router = useRouter()
   const nombre = useField({type: 'text', id:'nombre', clase : style.formInput})
   const email = useField({type: 'email', id: 'email', clase : style.formInput})
   const telefono = useField({type: 'tel', id: 'telefono', clase : style.formInput})
@@ -43,7 +45,7 @@ export default function SubscriptionForm() {
       }
 
       // 2. Éxito
-      setMessage(data.message || '¡Solicitud recibida! Te contactaremos pronto.');
+      router.replace('/gracias')
       setIsError(false);
       
       // Limpiar formulario
