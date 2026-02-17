@@ -45,7 +45,10 @@ export default function Formulario({ServicioQuery, PaqueteQuery}) {
       }
 
       // 2. Éxito
+      console.log('✅ Respuesta OK, intentando redirigir...')
+      console.log('router:', router)
       router.replace('/gracias')
+      console.log('✅ router.replace ejecutado')
       setIsError(false);
       
       // Limpiar formulario
